@@ -60,9 +60,9 @@ public class Disco {
 		this.superficie = superficie;
 	}
 
-	public Boolean verificarDisco(Double radioInterior, Double radioExterior) {
+	public Boolean verificarDisco() {
 		Boolean estadoDisco = true; // true si se puede crear
-		if (radioInterior > radioExterior) {
+		if (this.radioInterior > this.radioExterior) {
 			estadoDisco = false;
 		}
 		return estadoDisco;
